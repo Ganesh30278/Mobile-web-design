@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('leaf.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    background: rgba(203, 219, 218, 0.5); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%; 
+    max-width: 400px; 
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    display: block;
+    padding: 15px; /* Reduced padding for smaller screens */
+    background: white; /* 50% opacity */
+    border-radius: 4px;
+    text-decoration: none; /* Fixed typo from "solid" to "none" */
+    color: black;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+    background: green;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Reduced padding for small screens */
+        max-width: 90%; /* Take 90% of the screen width */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+
+    ul li a {
+        padding: 12px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+}
